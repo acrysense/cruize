@@ -89,112 +89,481 @@
 			<!-- search results -->
 			<div class="search-results" id="search-results">
 				<div class="container">
-					<div class="search-filter search-results__filter">
-						<form action="#" class="search-filter__wrapper">
-							<div class="search-filter__item is--selected" data-id="directions">
-								<span class="search-filter__label">Даты</span>
-								<div class="search-filter__inner">
-									<div class="search-filter__group">
-										<span class="search-filter__placeholder">Везде</span>
-										<!-- insert the selected value from the dropdown -->
-										<span class="search-filter__value">
-											с 1 мая 2025<br>
-											по 2 июля 2026
-										</span>
-									</div>
-									<svg class="search-filter__icon">
-										<use xlink:href="img/sprite.svg#icon-caret"></use>
+					<div class="main-filter search-results__filter">
+						<div class="main-filter__wrap">
+							<div class="main-filter__dropdown-top">
+								<span class="main-filter__dropdown-title">УТОЧНИТЬ ПОИСК</span>
+								<button class="main-filter__dropdown-close main-filter__dropdown-close--filter" aria-label="Закрыть">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-close"></use>
 									</svg>
+								</button>
+							</div>
+							<form action="#" class="main-filter__wrapper">
+								<div class="main-filter__item is--selected" data-id="directions">
+									<span class="main-filter__label">Даты</span>
+									<div class="main-filter__inner">
+										<div class="main-filter__group">
+											<span class="main-filter__placeholder">Везде</span>
+											<!-- insert the selected value from the dropdown -->
+											<span class="main-filter__value">
+												с 1 мая 2025<br>
+												по 2 июля 2026
+											</span>
+										</div>
+										<svg class="main-filter__icon">
+											<use xlink:href="img/sprite.svg#icon-caret"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="main-filter__item is--selected" data-id="calendar">
+									<span class="main-filter__label">ДНЕЙ</span>
+									<div class="main-filter__inner">
+										<div class="main-filter__group">
+											<span class="main-filter__placeholder">Неважно</span>
+											<!-- insert the selected value from the dropdown -->
+											<span class="main-filter__value">
+												от 11 <br>
+												до 24 дней
+											</span>
+										</div>
+										<svg class="main-filter__icon">
+											<use xlink:href="img/sprite.svg#icon-caret"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="main-filter__item is--selected" data-id="prices">
+									<span class="main-filter__label">Цена,₽</span>
+									<div class="main-filter__inner">
+										<div class="main-filter__group">
+											<span class="main-filter__placeholder">Любая</span>
+											<!-- insert the selected value from the dropdown -->
+											<span class="main-filter__value">
+												от 10 000 <br>
+												до 240 000 ₽
+											</span>
+										</div>
+										<svg class="main-filter__icon">
+											<use xlink:href="img/sprite.svg#icon-caret"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="main-filter__item is--selected" data-id="cruize">
+									<span class="main-filter__label">Круиз</span>
+									<div class="main-filter__inner">
+										<div class="main-filter__group">
+											<span class="main-filter__placeholder">Любая</span>
+											<!-- insert the selected value from the dropdown -->
+											<span class="main-filter__value">
+												Восточное <br>
+												Средиземноморье
+											</span>
+										</div>
+										<svg class="main-filter__icon">
+											<use xlink:href="img/sprite.svg#icon-caret"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="main-filter__item is--selected" data-id="port">
+									<span class="main-filter__label">ПОРТ</span>
+									<div class="main-filter__inner">
+										<div class="main-filter__group">
+											<span class="main-filter__placeholder">Любая</span>
+											<!-- insert the selected value from the dropdown -->
+											<span class="main-filter__value">
+												Канаверал, <br>
+												Флорида (США)
+											</span>
+										</div>
+										<svg class="main-filter__icon">
+											<use xlink:href="img/sprite.svg#icon-caret"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="main-filter__item is--selected" data-id="fleet">
+									<span class="main-filter__label">ЛАЙНЕР</span>
+									<div class="main-filter__inner">
+										<div class="main-filter__group">
+											<span class="main-filter__placeholder">Любая</span>
+											<!-- insert the selected value from the dropdown -->
+											<span class="main-filter__value">MSC World America</span>
+										</div>
+										<svg class="main-filter__icon">
+											<use xlink:href="img/sprite.svg#icon-caret"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="main-filter__item">
+									<button class="main-filter__btn">Поиск</button>
+								</div>
+							</form>
+							<div class="main-filter__dropdown" data-id="directions">
+								<div class="main-filter__dropdown-top">
+									<span class="main-filter__dropdown-title">КУДА</span>
+									<button class="main-filter__dropdown-close" aria-label="Закрыть">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-close"></use>
+										</svg>
+									</button>
+								</div>
+								<div class="main-filter-directions">
+									<ul class="main-filter-directions__list">
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Африка</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Восточное Средиземноморье</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Карибские острова</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Юго-восток Южной Америки</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Восточная Африка</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Западное Средиземноморье</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Центральные Карибы</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Южная Америка</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Западная Африка </button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">По Средиземноморью</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Восточные Карибы</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Северовосточная Бразилия</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Западная Африка </button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">По Средиземноморью</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Восточные Карибы</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Северовосточная Бразилия</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Западная Африка </button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">По Средиземноморью</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Восточные Карибы</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Северовосточная Бразилия</button>
+										</li>
+									</ul>
 								</div>
 							</div>
-							<div class="search-filter__item is--selected" data-id="calendar">
-								<span class="search-filter__label">ДНЕЙ</span>
-								<div class="search-filter__inner">
-									<div class="search-filter__group">
-										<span class="search-filter__placeholder">Неважно</span>
-										<!-- insert the selected value from the dropdown -->
-										<span class="search-filter__value">
-											от 11 <br>
-											до 24 дней
-										</span>
+							<div class="main-filter__dropdown" data-id="calendar">
+								<div class="main-filter__dropdown-top">
+									<span class="main-filter__dropdown-title">КОГДА</span>
+									<button class="main-filter__dropdown-close" aria-label="Закрыть">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-close"></use>
+										</svg>
+									</button>
+								</div>
+								<div class="main-filter-calendar">
+									<div class="main-filter-calendar__wrap">
+										<div class="main-filter-calendar__wrapper" id="main-filter-calendar"></div>
+										<button class="main-filter-calendar__clear">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-repeat"></use>
+											</svg>
+											<span>Сбросить</span>
+										</button>
 									</div>
-									<svg class="search-filter__icon">
-										<use xlink:href="img/sprite.svg#icon-caret"></use>
-									</svg>
 								</div>
 							</div>
-							<div class="search-filter__item is--selected" data-id="prices">
-								<span class="search-filter__label">Цена,₽</span>
-								<div class="search-filter__inner">
-									<div class="search-filter__group">
-										<span class="search-filter__placeholder">Любая</span>
-										<!-- insert the selected value from the dropdown -->
-										<span class="search-filter__value">
-											от 10 000 <br>
-											до 240 000 ₽
-										</span>
+							<div class="main-filter__dropdown main-filter__dropdown--short" data-id="prices">
+								<div class="main-filter__dropdown-top">
+									<span class="main-filter__dropdown-title">СТОИМОСТЬ</span>
+									<button class="main-filter__dropdown-close" aria-label="Закрыть">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-close"></use>
+										</svg>
+									</button>
+								</div>
+								<div class="main-filter-prices">
+									<div class="main-filter-prices__wrapper">
+										<div class="main-filter-prices__top">
+											<div class="main-filter-prices__inner">
+												<div class="main-filter-prices__group">
+													<span class="main-filter-prices__label">от</span>
+													<input type="number" id="main-filter-prices-from" class="main-filter-prices__input" placeholder="">
+												</div>
+												<div class="main-filter-prices__group">
+													<span class="main-filter-prices__label">до</span>
+													<input type="number" id="main-filter-prices-to" class="main-filter-prices__input" placeholder="">
+												</div>
+											</div>
+											<div class="main-filter-prices__currencies">
+												<button class="main-filter-prices__currency">₽</button>
+												<button class="main-filter-prices__currency is--active">€</button>
+											</div>
+										</div>
+										<button class="main-filter-prices__clear">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-repeat"></use>
+											</svg>
+											<span>Сбросить</span>
+										</button>
 									</div>
-									<svg class="search-filter__icon">
-										<use xlink:href="img/sprite.svg#icon-caret"></use>
-									</svg>
 								</div>
 							</div>
-							<div class="search-filter__item is--selected" data-id="cruize">
-								<span class="search-filter__label">Круиз</span>
-								<div class="search-filter__inner">
-									<div class="search-filter__group">
-										<span class="search-filter__placeholder">Любая</span>
-										<!-- insert the selected value from the dropdown -->
-										<span class="search-filter__value">
-											Восточное <br>
-											Средиземноморье
-										</span>
-									</div>
-									<svg class="search-filter__icon">
-										<use xlink:href="img/sprite.svg#icon-caret"></use>
-									</svg>
+							<div class="main-filter__dropdown" data-id="cruize">
+								<div class="main-filter__dropdown-top">
+									<span class="main-filter__dropdown-title">КУДА</span>
+									<button class="main-filter__dropdown-close" aria-label="Закрыть">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-close"></use>
+										</svg>
+									</button>
+								</div>
+								<div class="main-filter-directions">
+									<ul class="main-filter-directions__list">
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Круиз 1</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Восточное Средиземноморье</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Карибские острова</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Юго-восток Южной Америки</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Восточная Африка</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Западное Средиземноморье</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Центральные Карибы</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Южная Америка</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Западная Африка </button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">По Средиземноморью</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Восточные Карибы</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Северовосточная Бразилия</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Западная Африка </button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">По Средиземноморью</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Восточные Карибы</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Северовосточная Бразилия</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Западная Африка </button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">По Средиземноморью</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Восточные Карибы</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Северовосточная Бразилия</button>
+										</li>
+									</ul>
 								</div>
 							</div>
-							<div class="search-filter__item is--selected" data-id="port">
-								<span class="search-filter__label">ПОРТ</span>
-								<div class="search-filter__inner">
-									<div class="search-filter__group">
-										<span class="search-filter__placeholder">Любая</span>
-										<!-- insert the selected value from the dropdown -->
-										<span class="search-filter__value">
-											Канаверал, <br>
-											Флорида (США)
-										</span>
-									</div>
-									<svg class="search-filter__icon">
-										<use xlink:href="img/sprite.svg#icon-caret"></use>
-									</svg>
+							<div class="main-filter__dropdown" data-id="port">
+								<div class="main-filter__dropdown-top">
+									<span class="main-filter__dropdown-title">КУДА</span>
+									<button class="main-filter__dropdown-close" aria-label="Закрыть">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-close"></use>
+										</svg>
+									</button>
+								</div>
+								<div class="main-filter-directions">
+									<ul class="main-filter-directions__list">
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Порт 1</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Восточное Средиземноморье</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Карибские острова</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Юго-восток Южной Америки</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Восточная Африка</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Западное Средиземноморье</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Центральные Карибы</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Южная Америка</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Западная Африка </button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">По Средиземноморью</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Восточные Карибы</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Северовосточная Бразилия</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Западная Африка </button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">По Средиземноморью</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Восточные Карибы</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Северовосточная Бразилия</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Западная Африка </button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">По Средиземноморью</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Восточные Карибы</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Северовосточная Бразилия</button>
+										</li>
+									</ul>
 								</div>
 							</div>
-							<div class="search-filter__item is--selected" data-id="fleet">
-								<span class="search-filter__label">ЛАЙНЕР</span>
-								<div class="search-filter__inner">
-									<div class="search-filter__group">
-										<span class="search-filter__placeholder">Любая</span>
-										<!-- insert the selected value from the dropdown -->
-										<span class="search-filter__value">MSC World America</span>
-									</div>
-									<svg class="search-filter__icon">
-										<use xlink:href="img/sprite.svg#icon-caret"></use>
-									</svg>
+							<div class="main-filter__dropdown" data-id="fleet">
+								<div class="main-filter__dropdown-top">
+									<span class="main-filter__dropdown-title">КУДА</span>
+									<button class="main-filter__dropdown-close" aria-label="Закрыть">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-close"></use>
+										</svg>
+									</button>
+								</div>
+								<div class="main-filter-directions">
+									<ul class="main-filter-directions__list">
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Лайнер 1</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Восточное Средиземноморье</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Карибские острова</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Юго-восток Южной Америки</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Восточная Африка</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Западное Средиземноморье</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Центральные Карибы</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Южная Америка</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Западная Африка </button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">По Средиземноморью</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Восточные Карибы</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Северовосточная Бразилия</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Западная Африка </button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">По Средиземноморью</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Восточные Карибы</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Северовосточная Бразилия</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Западная Африка </button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">По Средиземноморью</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Восточные Карибы</button>
+										</li>
+										<li class="main-filter-directions__item">
+											<button class="main-filter-directions__btn">Северовосточная Бразилия</button>
+										</li>
+									</ul>
 								</div>
 							</div>
-							<div class="search-filter__item">
-								<button class="search-filter__btn">Поиск</button>
-							</div>
-						</form>
+						</div>
 					</div>
 					<div class="search-sort search-results__sort">
 						<div class="search-sort__wrapper">
 							<div class="search-sort__inner">
 								<span class="search-sort__result">Результатов: <b>5</b></span>
 							</div>
-							<div class="search-sort__inner">
+							<div class="search-sort__inner search-sort__inner--fixed">
+								<button class="search-sort__trigger">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-search"></use>
+									</svg>
+									<span>Уточнить <br>поиск</span>
+								</button>
 								<div class="search-sort__checkboxes">
 									<div class="square-checkbox search-sort__checkbox">
 										<input type="checkbox" class="square-checkbox__input" id="filter-group-01">
@@ -210,14 +579,14 @@
 									</svg>
 									<span>цена по убыванию</span>
 								</button>
-								<ul class="search-sort__prices">
-									<li class="search-sort__prices-item">
-										<button class="search-sort__price">₽</button>
-									</li>
-									<li class="search-sort__prices-item is--active">
-										<button class="search-sort__price">€</button>
-									</li>
-								</ul>
+								<!-- <ul class="search-sort__prices">
+                                    <li class="search-sort__prices-item">
+                                        <button class="search-sort__price">₽</button>
+                                    </li>
+                                    <li class="search-sort__prices-item is--active">
+                                        <button class="search-sort__price">€</button>
+                                    </li>
+                                </ul> -->
 							</div>
 						</div>
 					</div>
@@ -441,7 +810,7 @@
 	</div>
 	<!-- end of mobile menu -->
 	<!-- modals -->
-	<div class="modal" id="modal-cruize">
+	<div class="modal" id="modal-cruise-book">
 		<div class="modal__wrap">
 			<div class="modal__wrapper">
 				<button class="modal__close-btn modal__close" aria-label="Закрыть">
@@ -449,6 +818,107 @@
 						<use xlink:href="img/sprite.svg#icon-close"></use>
 					</svg>
 				</button>
+				<span class="modal__heading">ЗАКАЗ КРУИЗА</span>
+				<div class="book-cruise modal__book-cruise">
+					<div class="book-cruise__wrapper">
+						<div class="book-cruise__left">
+							<picture class="book-cruise__img">
+								<img src="img/book-cruise.jpg" alt="Image">
+							</picture>
+							<div class="input-field book-cruise__input">
+								<div class="input-field__inner">
+									<input id="modal-cruize-name" type="text" class="input-field__input" placeholder="Имя">
+								</div>
+								<span class="input-field__error">Это поле обязательное для заполнения!</span>
+							</div>
+							<div class="input-field book-cruise__input">
+								<div class="input-field__inner">
+									<input id="modal-cruize-email" type="email" class="input-field__input" placeholder="E-mail">
+								</div>
+								<span class="input-field__error">Это поле обязательное для заполнения!</span>
+							</div>
+							<div class="input-field book-cruise__input">
+								<div class="input-field__inner">
+									<input id="modal-cruize-tel" type="tel" class="input-field__input" placeholder="Телефон">
+								</div>
+								<span class="input-field__error">Это поле обязательное для заполнения!</span>
+							</div>
+							<div class="input-field book-cruise__textarea">
+								<div class="input-field__inner">
+									<textarea id="feedback-message" class="input-field__textarea" placeholder="Дополнительная информация"></textarea>
+								</div>
+								<span class="input-field__error">Это поле обязательное для заполнения!</span>
+							</div>
+						</div>
+						<div class="book-cruise__right">
+							<div class="book-cruise__top">
+								<span class="book-cruise__title">Бразилия</span>
+								<span class="book-cruise__location">Италия - Франция - Испания - Марокко - Кабо-Верде - Бразилия</span>
+							</div>
+							<div class="book-cruise__info">
+								<span class="book-cruise__info-item">05.01.2025, Генуя</span>
+								<span class="book-cruise__info-item">24 дней, 23 ночей</span>
+							</div>
+							<div class="book-cruise__prices">
+								<span class="book-cruise__help">минимальная стоимость *</span>
+								<span class="book-cruise__price">701 220 ₽ </span>
+								<span class="book-cruise__help">*Указана цена круиза на одного человека при двухместном размещении без учета портового сбора</span>
+							</div>
+							<div class="input-field book-cruise__input">
+								<div class="input-field__inner">
+									<input id="modal-cruize-tel" type="number" class="input-field__input" placeholder="Количество человек">
+								</div>
+								<span class="input-field__error">Это поле обязательное для заполнения!</span>
+							</div>
+							<button class="book-cruise__btn btn">ОТПРАВИТЬ</button>
+							<a href="#" class="book-cruise__contact-btn contact-btn contact-btn--green">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+								</svg>
+								<span>WHATSAPP</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-cruise">
+		<div class="modal__wrap modal__wrap--md">
+			<div class="modal__wrapper">
+				<button class="modal__close-btn modal__close" aria-label="Закрыть">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+				<span class="modal__heading">ЗАКАЗ КРУИЗА</span>
+				<form action="#" class="modal-form modal__form">
+					<div class="input-field modal-form__input">
+						<div class="input-field__inner">
+							<input id="modal-cruize-name" type="text" class="input-field__input" placeholder="Имя">
+						</div>
+						<span class="input-field__error">Это поле обязательное для заполнения!</span>
+					</div>
+					<div class="input-field modal-form__input">
+						<div class="input-field__inner">
+							<input id="modal-cruize-email" type="email" class="input-field__input" placeholder="E-mail">
+						</div>
+						<span class="input-field__error">Это поле обязательное для заполнения!</span>
+					</div>
+					<div class="input-field modal-form__input">
+						<div class="input-field__inner">
+							<input id="modal-cruize-tel" type="tel" class="input-field__input" placeholder="Телефон">
+						</div>
+						<span class="input-field__error">Это поле обязательное для заполнения!</span>
+					</div>
+					<div class="input-field modal-form__textarea">
+						<div class="input-field__inner">
+							<textarea id="feedback-message" class="input-field__textarea" placeholder="Дополнительная информация"></textarea>
+						</div>
+						<span class="input-field__error">Это поле обязательное для заполнения!</span>
+					</div>
+					<button class="modal-form__btn btn">ОТПРАВИТЬ</button>
+				</form>
 			</div>
 		</div>
 	</div>

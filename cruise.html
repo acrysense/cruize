@@ -613,6 +613,120 @@
 		</div>
 	</div>
 	<!-- end of mobile menu -->
+	<!-- modals -->
+	<div class="modal" id="modal-cruise-book">
+		<div class="modal__wrap">
+			<div class="modal__wrapper">
+				<button class="modal__close-btn modal__close" aria-label="Закрыть">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+				<span class="modal__heading">ЗАКАЗ КРУИЗА</span>
+				<div class="book-cruise modal__book-cruise">
+					<div class="book-cruise__wrapper">
+						<div class="book-cruise__left">
+							<picture class="book-cruise__img">
+								<img src="img/book-cruise.jpg" alt="Image">
+							</picture>
+							<div class="input-field book-cruise__input">
+								<div class="input-field__inner">
+									<input id="modal-cruize-name" type="text" class="input-field__input" placeholder="Имя">
+								</div>
+								<span class="input-field__error">Это поле обязательное для заполнения!</span>
+							</div>
+							<div class="input-field book-cruise__input">
+								<div class="input-field__inner">
+									<input id="modal-cruize-email" type="email" class="input-field__input" placeholder="E-mail">
+								</div>
+								<span class="input-field__error">Это поле обязательное для заполнения!</span>
+							</div>
+							<div class="input-field book-cruise__input">
+								<div class="input-field__inner">
+									<input id="modal-cruize-tel" type="tel" class="input-field__input" placeholder="Телефон">
+								</div>
+								<span class="input-field__error">Это поле обязательное для заполнения!</span>
+							</div>
+							<div class="input-field book-cruise__textarea">
+								<div class="input-field__inner">
+									<textarea id="feedback-message" class="input-field__textarea" placeholder="Дополнительная информация"></textarea>
+								</div>
+								<span class="input-field__error">Это поле обязательное для заполнения!</span>
+							</div>
+						</div>
+						<div class="book-cruise__right">
+							<div class="book-cruise__top">
+								<span class="book-cruise__title">Бразилия</span>
+								<span class="book-cruise__location">Италия - Франция - Испания - Марокко - Кабо-Верде - Бразилия</span>
+							</div>
+							<div class="book-cruise__info">
+								<span class="book-cruise__info-item">05.01.2025, Генуя</span>
+								<span class="book-cruise__info-item">24 дней, 23 ночей</span>
+							</div>
+							<div class="book-cruise__prices">
+								<span class="book-cruise__help">минимальная стоимость *</span>
+								<span class="book-cruise__price">701 220 ₽ </span>
+								<span class="book-cruise__help">*Указана цена круиза на одного человека при двухместном размещении без учета портового сбора</span>
+							</div>
+							<div class="input-field book-cruise__input">
+								<div class="input-field__inner">
+									<input id="modal-cruize-tel" type="number" class="input-field__input" placeholder="Количество человек">
+								</div>
+								<span class="input-field__error">Это поле обязательное для заполнения!</span>
+							</div>
+							<button class="book-cruise__btn btn">ОТПРАВИТЬ</button>
+							<a href="#" class="book-cruise__contact-btn contact-btn contact-btn--green">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+								</svg>
+								<span>WHATSAPP</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-cruise">
+		<div class="modal__wrap modal__wrap--md">
+			<div class="modal__wrapper">
+				<button class="modal__close-btn modal__close" aria-label="Закрыть">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+				<span class="modal__heading">ЗАКАЗ КРУИЗА</span>
+				<form action="#" class="modal-form modal__form">
+					<div class="input-field modal-form__input">
+						<div class="input-field__inner">
+							<input id="modal-cruize-name" type="text" class="input-field__input" placeholder="Имя">
+						</div>
+						<span class="input-field__error">Это поле обязательное для заполнения!</span>
+					</div>
+					<div class="input-field modal-form__input">
+						<div class="input-field__inner">
+							<input id="modal-cruize-email" type="email" class="input-field__input" placeholder="E-mail">
+						</div>
+						<span class="input-field__error">Это поле обязательное для заполнения!</span>
+					</div>
+					<div class="input-field modal-form__input">
+						<div class="input-field__inner">
+							<input id="modal-cruize-tel" type="tel" class="input-field__input" placeholder="Телефон">
+						</div>
+						<span class="input-field__error">Это поле обязательное для заполнения!</span>
+					</div>
+					<div class="input-field modal-form__textarea">
+						<div class="input-field__inner">
+							<textarea id="feedback-message" class="input-field__textarea" placeholder="Дополнительная информация"></textarea>
+						</div>
+						<span class="input-field__error">Это поле обязательное для заполнения!</span>
+					</div>
+					<button class="modal-form__btn btn">ОТПРАВИТЬ</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- end of modals -->
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>

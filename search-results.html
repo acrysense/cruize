@@ -514,20 +514,21 @@
 										</label>
 									</div>
 								</div>
+								<!-- add class 'is--active' -->
 								<button class="search-sort__order">
-									<svg>
-										<use xlink:href="img/sprite.svg#icon-sort-down"></use>
-									</svg>
-									<span>цена по убыванию</span>
+									<span class="search-sort__order-default">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-sort-down"></use>
+										</svg>
+										<span>цена по убыванию</span>
+									</span>
+									<span class="search-sort__order-active">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-sort-up"></use>
+										</svg>
+										<span>цена по возрастанию</span>
+									</span>
 								</button>
-								<!-- <ul class="search-sort__prices">
-                                    <li class="search-sort__prices-item">
-                                        <button class="search-sort__price">₽</button>
-                                    </li>
-                                    <li class="search-sort__prices-item is--active">
-                                        <button class="search-sort__price">€</button>
-                                    </li>
-                                </ul> -->
 							</div>
 						</div>
 					</div>
@@ -966,6 +967,24 @@
 						<span class="modal-message__heading">СПАСИБО!</span>
 						<p class="modal-message__description">Мы свяжемся с вами в скором времени по данному запросу. Спасибо, что пользуетесь нашими услугами!</p>
 						<button class="modal-message__btn modal__close btn">ЗАКРЫТЬ</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-thanks">
+		<div class="modal__wrap modal__wrap--m">
+			<div class="modal__wrapper">
+				<button class="modal__close-btn modal__close" aria-label="Закрыть">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+				<div class="modal-thanks">
+					<div class="modal-thanks__wrapper">
+						<span class="modal-thanks__heading">ГОТОВО</span>
+						<p class="modal-thanks__description">Спасибо, что пользуетесь нашими услугами. <br>Ожидайте, с вами вскоре свяжется ваш менеджер.</p>
+						<button class="modal-thanks__btn modal__close btn btn--md">ЗАКРЫТЬ</button>
 					</div>
 				</div>
 			</div>

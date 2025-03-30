@@ -637,10 +637,16 @@
 					<div class="promotional-banner__wrapper" style="background-image: url(img/promotional-banner.jpg);">
 						<div class="promotional-banner__body">
 							<span class="promotional-banner__title">Узнавайте новости о круизах и акциях</span>
-							<div class="promotional-banner__buttons">
-								<a href="#" class="promotional-banner__btn btn btn--border-white">E-MAIL</a>
-								<a href="#" class="promotional-banner__btn btn btn--border-white">ПОДПИСАТЬСЯ</a>
-							</div>
+							<!-- add class to form 'is--error to visible error message OR add class to form 'is--hidden' for hide form -->
+							<form action="#" class="promotional-banner__form">
+								<div class="promotional-banner__inner">
+									<input type="text" class="promotional-banner__input" placeholder="ВАШ E-MAIL">
+									<button class="promotional-banner__btn btn btn--border-white">ПОДПИСАТЬСЯ</button>
+								</div>
+								<span class="promotional-banner__error">На этот адрес подписка уже оформлена / Адрес введен неверно</span>
+							</form>
+							<!-- add class 'is--active' for visible message -->
+							<span class="promotional-banner__message">Вы подписаны на нашу рассылку. Получайте самые свежие предложения!</span>
 						</div>
 					</div>
 				</div>
@@ -942,6 +948,24 @@
 								</ul>
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-success">
+		<div class="modal__wrap modal__wrap--md">
+			<div class="modal__wrapper">
+				<button class="modal__close-btn modal__close" aria-label="Закрыть">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+				<div class="modal-message">
+					<div class="modal-message__wrapper">
+						<span class="modal-message__heading">СПАСИБО!</span>
+						<p class="modal-message__description">Мы свяжемся с вами в скором времени по данному запросу. Спасибо, что пользуетесь нашими услугами!</p>
+						<button class="modal-message__btn modal__close btn">ЗАКРЫТЬ</button>
 					</div>
 				</div>
 			</div>
